@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>calculator</title>
+	<style type="text/css">
+		td{
+			text-align: center;
+			border-color: darkblack;    
+		}
+	</style>
+</head>
+<body>
+   <h2><center>Calculator</center></h2>
+  <center> <table border=" bold" cellpadding="40px" style="background-color:  ghostwhite;">
+   	<tr>
+   		<td   colspan="4" style="text-align: right" id="result_id" ></td> 
+   	</tr>
+   	<tr>
+   		<td style= "background-color:cyan;""cursor: pointer;" onclick="getnum('9')"><h3>9</h3></td>
+   		<td style="background-color:cyan;""cursor: pointer;" onclick="getnum('8')">8</td>
+   		<td style="background-color:cyan;""cursor: pointer;" onclick="getnum('7')">7</td>
+   		<td style="background-color:cyan;""cursor: pointer;" onclick="getnum('/')">/</td>
+   	</tr>
+   	<tr>
+   		<td style="background-color:cyan;""cursor: pointer;" onclick="getnum('6')">6</td>
+   		<td style="background-color:hotpink;""cursor: pointer;" onclick="getnum('5')">5</td>
+   		<td style="background-color: hotpink;""cursor: pointer;" onclick="getnum('4')">4</td>
+   		<td style="background-color:cyan;""cursor: pointer;" onclick="getnum('*')">*</td>
+   	</tr>
+   	<tr>
+   		<td style="background-color:cyan;""cursor: pointer;" onclick="getnum('3')">3</td>
+   		<td style="background-color: hotpink;""cursor: pointer;" onclick="getnum('2')">2</td>
+   		<td style="background-color: hotpink;""cursor: pointer;" onclick="getnum('1')">1</td>
+   		<td style="background-color:cyan;""cursor: pointer;" onclick="getnum('-')">-</td>
+   	</tr>
+   	<tr>
+   		<td style="background-color:cyan;""cursor: pointer;" onclick="getnum('0')">0</td>
+   		<td style="background-color:cyan;""cursor: pointer;" onclick="clearall('c')">C</td>
+   		<td style="background-color:cyan;""cursor: pointer;" onclick="getnum('=')">=</td>
+   		<td style="background-color:cyan;""cursor: pointer;" onclick="getnum('+')">+</td>
+   	</tr>
+   </table></center>
+   <script type="text/javascript">
+   	function getnum(val){
+   		if (val=='='){
+   		var res = document.getElementById('result_id').innerText
+   		document.getElementById('result_id').innerText=eval((res))
+   	}
+   	else{
+   		document.getElementById('result_id').innerText+=val;
+   	}
+   	}  
+   	function clearall(){
+   	document.getElementById('result_id').innerText=''
+   	}
+   
+   </script>
+</body>
+</html>

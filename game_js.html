@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio butten game</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height:100vh;
+            width: 100%;
+            background-color: aqua;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            margin-top: 30px;
+        }
+        button{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>select a number</h1>
+        <div class="container">
+            <label for="">0</label> <input type="radio" name="radio" value="0">
+            <label for="">1</label> <input type="radio" name="radio" value="1">
+            <label for="">2</label> <input type="radio" name="radio" value="2">
+            <label for="">3</label> <input type="radio" name="radio" value="3">
+            <label for="">4</label> <input type="radio" name="radio" value="4">
+        </div>
+        <!-- <button onclick="alert(document.querySelector('input[name = radio]:checked').value)">click me to get the selected option'<s-->
+        <button onclick="start_game()">PlayGame</button><br>
+        <input type="text" id="get"><br>
+        <h1 id="output"></h1>
+    </center>
+    <script>
+        let radio=document.querySelectorAll('.container input')
+        function start_game(){
+            for(var i=0;i<radio.length;i++){
+                if(radio[i].checked){
+                    var x=radio[i].value;
+                    // document.getElementById('get').value=x;
+                    var y=Math.floor(Math.random() * 4);
+                    document.getElementById('get').value=y;
+                    if(x==y){
+                        document.getElementById('output').innerHTML="You Won"
+                    }
+                    else{
+                        document.getElementById('output').innerHTML="You Loose"
+
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

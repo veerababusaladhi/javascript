@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>strigs 1</title>
+	<style type="text/css">
+		table{
+			width: 500px;
+			height: 150px;
+		}
+	</style>
+</head>
+<body>
+	<table border="">
+		
+			<tr>
+				<center>
+			<td>D</td>
+			<td>R</td>
+			<td>I</td>
+			<td>V</td>
+			<td>E</td>
+			<td>&nbsp;</td>
+			<td>R</td>
+			<td>E</td>
+			<td>A</td>
+			<td>D</td>
+			<td>Y</td>
+
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+			<td>11</td>
+</center>
+		</tr>
+		    	<tr>  
+    	<td>-11</td>
+    	<td>-10</td>
+    	<td>-9</td>
+    	<td>-8</td>
+    	<td>-7</td>
+    	<td>-6</td>
+    	<td>-5</td>
+    	<td>-4</td>
+    	<td>-3</td>
+    	<td>-2</td>
+    	<td>-1</td>
+    	
+
+
+    </tr>
+		
+	</table>
+	<script type="text/javascript">
+		function getstr(str){
+			document.write(`${str} <br>`)
+		}
+		let str =' drive ready';
+		getstr(str)
+		getstr("<b>length of string=</b>"+str.length)
+		getstr("char at 2="+str.charAt(2))
+		getstr("index of r ="+str.indexOf('r'))
+		getstr("index of last r ="+str.lastIndexOf('r'))
+
+
+
+		function getstr2(str2){
+			document.write("<br><br><br><b>"+str2+"</b>")
+		}
+		let str2='FULL STACK'
+		getstr2(str2)
+
+
+
+         //to change case of string  
+		getstr2("to lower case:- "+str2.toLowerCase())
+		 getstr2("To Upper Case:- "+str2.toUpperCase())
+
+
+
+
+
+        // to concate  strings
+		let a='saladhi';
+		let b='ganesh';
+		getstr2(" concatination:"+a.concat(b))
+		document.write("<br>");
+		 getstr("Concate of strings:-"+str2.concat(a,b,str))
+
+
+
+
+        //to remove spacess from right & left sides
+           let g=' ganesh  ';
+		getstr2("trim()mathod:"+g.trim())
+
+
+
+      //covert string into an array
+		let s='ganesh&vijay&siva&ips';
+		console.log(s.split("&"));
+
+
+
+
+        //startwith and endwith
+        let name6='s.Ganesh';
+
+		 console.log(name6.startsWith('s'))//true
+      console.log(name6.startsWith('t'))//false
+      console.log(name6.endsWith('r'))//false
+      console.log(name6.endsWith('h'))//true
+
+
+
+      //Slice method
+ //ss('slice of string = '+str.slice(startpos,endpos1))
+ //it allows positive and negative index values
+    	document.write("<br>")
+
+    	let  z = 'ADITYA'
+
+ getstr2('slice of string:-'+z.slice(1,4));//1,(4-1) 
+    	document.write("<br><br>")
+    	 getstr('slice of string:-'+z.slice(-3));//-3,-2.-1//ady
+    	document.write("<br>")
+
+ getstr('slice of string:-'+z.slice(-4,-2));//-4,(-2-1)=-3,i.e;-4,-3     
+    	document.write("<br>")
+
+
+
+//Includes of method
+    	//this method is used to checking that word is there in our string or not
+
+       let k = 'virat kohli---king'
+
+    	getstr('includes of string: '+k.includes('virat'))
+    	document.write("<br>")
+    	getstr('includes of string: '+k.includes('---'))
+
+
+
+
+    	//charCodeAt method --for finding the ascii code values
+    	document.write("<br>")
+    	getstr('charCodeAt of string:-'+name.charCodeAt(''));
+
+		
+	</script>
+
+</body>
+</html>

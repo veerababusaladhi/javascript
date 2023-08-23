@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cake Task</title>
+	<style type="text/css">
+		#abc{
+			margin-top:50px;
+			margin-left:350px;
+		}
+	</style>
+</head>
+<body>
+	<img src="k1.jpeg" id="abc" style="width:400px;height: 400px;">
+	<script type="text/javascript">
+		let candle = document.getElementById('abc');
+		candle.onmouseout = candle1
+		candle.onmouseover = candle2
+		function candle1(){
+			candle.src = 'k1.jpeg';
+		}
+		function candle2(){
+			candle.src = 'k2.jpeg';
+		}
+	</script>
+</body>
+</html>

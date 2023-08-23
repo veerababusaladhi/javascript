@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cake Task</title>
+	<style type="text/css">
+		#abc{
+			margin-top:50px;
+			margin-left:350px;
+		}
+	</style>
+</head>
+<body>
+	<img src="Cake 1.jpg" id="abc" style="width:400px;height: 400px;">
+	<script type="text/javascript">
+		let cake = document.getElementById('abc');
+		cake.onmouseout = cake1
+		cake.onmouseover = cake2
+		function cake1(){
+			cake.src = 'c1.jpeg';
+		}
+		function cake2(){
+			cake.src = 'c2.jpeg';
+		}
+	</script>
+</body>
+</html>

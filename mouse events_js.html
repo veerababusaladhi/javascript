@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>mouse events</title>
+</head>
+<body>
+	<button id="btn_id">click here</button>
+	<script type="text/javascript">
+		let btn=document.getElementById('btn_id');
+		btn.onclick=sample
+		btn.ondblclick= dblsample
+		btn.onmouseover=oversample
+		btn.onmouseout=outsample
+
+
+		function sample() {
+			// document.write("ganesh")
+			document.body.style.background='green';
+		}
+		function dblsample() {
+			document.body.style.background='hotpink';
+		}
+		function oversample() {
+			document.body.style.background='grey';
+		}
+		function outsample() {
+			document.body.style.background='skyblue';
+		}
+	</script>
+
+</body>
+</html>

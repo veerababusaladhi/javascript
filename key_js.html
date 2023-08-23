@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>validate form</title>
+
+</head>
+<body>
+<form method="post" name="Form" onsubmit="" action="">
+    <input length="20" required=""id="background-color"></input>
+    <input type="submit" value="Submit"></input>
+</form>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        document.getElementById('color').innerText;
+        document.border.style.color=red border=solid red;
+
+        return ;
+    }
+}
+</script>
+
+</body>
+</html>

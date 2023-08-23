@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EVENT HANDLER</title>
+</head>
+<body>
+	<!-- inline event hander -->
+    <!-- first way -->
+	<!-- <button onclick="test()">click here</button>
+
+
+	<script type="text/javascript">
+		function test(){
+			alert('testing...........')
+			document.body.style.background='pink'
+		}
+	</script> -->
+
+
+
+
+	   <!-- second way -->
+	  <!--  <button id="btn_id">click here</button>
+	   <script type="text/javascript">
+	   	let btn=document.getElementById('btn_id');
+	   	btn.onclick=function(){
+	   		alert('hi')
+	   		document.body.style.background='green'
+	   	}
+	   </script> -->
+
+
+
+
+
+
+       <!-- third way -->
+        <button id="btn_id">click here</button>
+         <span id="sp_id">fsd</span>
+
+	    <script type="text/javascript">
+
+	   	let btn=document.getElementById('btn_id');
+	   	btn.addEventListener('click',test)
+	   	function test(){
+	   		alert('on the way')
+	   		document.body.style.background='blue'
+	   		document.getElementById('sp_id').style.display='none'
+	   	}
+	   </script>
+
+
+
+
+</body>
+</html>

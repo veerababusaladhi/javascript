@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Onkey properties</title>
+</head>
+<body>
+	<form>
+
+		<label>key down</label>
+		<!-- <br> -->
+		<input type="" name="" value="" onkeydown="sample(this.value)">
+		<br><br><span id="vijay"></span><br><br>
+		
+		<label>Key up</label>
+		<!-- <br> -->
+		<input type="" name="" value="" onkeyup="sample(this.value)">
+		<br><br><br><br>
+		<label>key press</label>
+		<!-- <br> -->
+		<input type="" name="" value="" onkeypress="sample(this.value)">
+		<span id="vijay"></span>
+	</form>
+	<script type="text/javascript">
+		function sample(color_value) {
+			document.getElementById('vijay').innerText=color_value;
+			document.body.style.background = color_value
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task 1</title>
+</head>
+<body>
+	<table border="2">
+		<tr>
+			<th>Course name</th>
+			<th>Course number</th>
+			<th>Course fees</th>
+			<th>Places</th>
+		</tr>
+	<tbody id="tablebody">
+		
+	</tbody>
+	</table>
+	<script type="text/javascript">
+		let courses = [
+{
+		'name' : 'HTML',
+		'number': '21255-EC-106',
+		'fees'  : '235',
+		'place' : 'venkatapuram',
+},
+{
+		'name' : 'CSS',
+		'number': '21255-EC-105',
+		'fees'  : '478',
+		'place' : 'mandapeta',
+},
+{
+		'name' : 'JAVASCRIPT',
+		'number': '21255-EC-88',
+		'fees'  : '576',
+		'place' : 'jaggampeta',
+},
+		]
+		
+		// for (var i = 0; i < courses.length; i++) {
+		// 	document.getElementsByTagName("tbody")[0].innerHTML+= "<tr><td>"+courses[i].name+"</td><td>"+courses[i].number+"</td><td>"+courses[i].fees+"</td><td>"+courses[i].place+"</td></tr>"
+		// };
+		for(i=0;i<3;i++){
+			let tr=document.createElement('tr');
+			console.log(tr);
+			let td1=document.createElement('td');
+			let td2=document.createElement('td');
+			let td3=document.createElement('td');
+			let td4=document.createElement('td');
+			td1.innerText=courses[i].name;
+			td2.innerText=courses[i].number;
+			td3.innerText=courses[i].fees;
+			td4.innerText=courses[i].place;
+
+			tr.append(td1);
+			tr.append(td2);
+			tr.append(td3);
+			tr.append(td4);
+			document.getElementById('tablebody').append(tr);
+		}
+	</script>
+
+
+</body>
+</html>
